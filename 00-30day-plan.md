@@ -26,7 +26,8 @@
 ## 当前进度
 
 - **已完成：D1 · 小节 1** — `query` 外壳 vs `queryLoop` 内核
-- **下一步：D1 · 小节 2** — 不可变 params vs 可变 State（未开始）
+- **已完成：D1 · 小节 2** — 不可变 params vs 可变 State
+- **下一步：D1 · 小节 3** — `while(true)` 与 continue / Terminal 出口心智（未开始）
 
 ## 文件约定
 
