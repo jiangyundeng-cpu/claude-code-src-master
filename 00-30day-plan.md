@@ -25,10 +25,9 @@
 
 ## 当前进度
 
-- **已完成：D1 · 小节 1** — `query` 外壳 vs `queryLoop` 内核
-- **已完成：D1 · 小节 2** — 不可变 params vs 可变 State
-- **已完成：D1 · 小节 3** — `while(true)` 与 continue / Terminal 出口心智
-- **Day1 收官** — 下一节起进入 Day2（未开始）
+- **已完成：D1 · 小节 1–3** — 门面 / params·state / Continue·Terminal
+- **已完成：D2 · 小节 1** — `deps` 依赖注入
+- **下一步：D2 · 小节 2** — `QueryConfig` 快照（未开始）
 
 ## 文件约定
 
