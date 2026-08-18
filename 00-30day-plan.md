@@ -31,7 +31,8 @@
 - **已完成：D2 · 小节 3** — `while(true)` 圈顶拆 state（开工清单）
 - **已完成：D3 · 小节 1** — `messages` vs `messagesForQuery`（发给模型的工作副本）
 - **已完成：D3 · 小节 2** — compact 流水线：如何把「信」变短
-- **下一步：D4** — 未开始（callModel 寄出）
+- **已完成：D4 · 小节 1** — `deps.callModel`：把信寄给模型
+- **下一步：D4 · 小节 2** — 未开始（模型回了什么：文本 vs tool_use）
 
 ## 今日安排（恢复日，只啃 1 小节）
 
