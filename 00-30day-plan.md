@@ -34,7 +34,9 @@
 - **已完成：D4 · 小节 1** — `deps.callModel`：把信寄给模型
 - **已完成：D4 · 小节 2** — 模型回了什么：文本 vs tool_use
 - **已完成：D5 · 小节 1** — `runTools`：执行工具并把 tool_result 收回来
-- **下一步：D5 · 小节 2** — 未开始（toolResults 写回 state → Continue）
+- **已完成：D5 · 小节 2** — toolResults 写回 state → Continue
+- **里程碑：主闭环合龙**（寄信 → 工具 → 写回 → 再寄）
+- **下一步：D6** — 未开始（权限 canUseTool / 护栏入门）
 
 ## 今日安排（恢复日，只啃 1 小节）
 
