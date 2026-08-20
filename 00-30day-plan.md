@@ -33,7 +33,8 @@
 - **已完成：D3 · 小节 2** — compact 流水线：如何把「信」变短
 - **已完成：D4 · 小节 1** — `deps.callModel`：把信寄给模型
 - **已完成：D4 · 小节 2** — 模型回了什么：文本 vs tool_use
-- **下一步：D4 · 小节 3 / D5** — 未开始（真正 runTools）
+- **已完成：D5 · 小节 1** — `runTools`：执行工具并把 tool_result 收回来
+- **下一步：D5 · 小节 2** — 未开始（toolResults 写回 state → Continue）
 
 ## 今日安排（恢复日，只啃 1 小节）
 
