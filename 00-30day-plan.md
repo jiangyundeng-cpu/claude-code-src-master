@@ -36,7 +36,8 @@
 - **已完成：D5 · 小节 1** — `runTools`：执行工具并把 tool_result 收回来
 - **已完成：D5 · 小节 2** — toolResults 写回 state → Continue
 - **里程碑：主闭环合龙**（寄信 → 工具 → 写回 → 再寄）
-- **下一步：D6** — 未开始（权限 canUseTool / 护栏入门）
+- **已完成：D6 · 小节 1** — `canUseTool`：工具执行前的权限闸门
+- **下一步：D6 · 小节 2** — 未开始（Permission 规则 / allow-deny-ask 从哪来）
 
 ## 今日安排（恢复日，只啃 1 小节）
 
