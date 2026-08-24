@@ -21,7 +21,7 @@
 | **M3** | 上下文寄信：messagesForQuery + compact 流水线 | ✅ 已完成 | compact + `messagesForQuery` |
 | **M4** | 主闭环：callModel → tool_use → runTools → 写回 | ✅ 已完成 | `queryLoop` 主干 |
 | **M5** | 权限与 Tool 协议：canUseTool / 规则 / deny 回灌 / Tool | ✅ 已完成 | `permissions` + `Tool.ts` |
-| **M6** | 容错与停机：abort / max_turns / 常见 Terminal | ⬜ 下一步 | `aborted_*` / `max_turns` |
+| **M6** | 容错与停机：abort / max_turns / 常见 Terminal | ✅ 已完成 | `aborted_*` / `max_turns` |
 | **M7** | 工具进阶：流式执行 + 结果预算 | ⬜ | `StreamingToolExecutor` |
 | **M8** | 上下文进阶：memory / attachments / reactive compact 概览 | ⬜ | `attachments` / compact |
 | **M9** | Hooks 护栏：PreToolUse / stop hooks | ⬜ | `hooks.ts` |
@@ -48,9 +48,15 @@
 - M4：callModel 寄信、needsFollowUp、runTools、三截写回
 - M5：canUseTool 闸门、规则流水线、deny 仍交 tool_result、Tool 协议
 
+### 已完成 M6
+
+- Esc：流式 → `aborted_streaming`；跑工具 → `aborted_tools`；中断也要补 tool_result
+- `max_turns`：Continue 前检查，超了直接 return，不 `state=next`
+- Terminal.reason 区分 completed / abort / 超限 / 模型错，门面不假报完成
+
 ### 下一步
 
-- **M6：容错与停机**（abort Esc、max_turns、常见 `reason` 一张表）
+- **M7：工具进阶**（流式执行 + 结果预算）——未开始
 
 ## 文件约定
 
