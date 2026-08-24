@@ -22,7 +22,7 @@
 | **M4** | 主闭环：callModel → tool_use → runTools → 写回 | ✅ 已完成 | `queryLoop` 主干 |
 | **M5** | 权限与 Tool 协议：canUseTool / 规则 / deny 回灌 / Tool | ✅ 已完成 | `permissions` + `Tool.ts` |
 | **M6** | 容错与停机：abort / max_turns / 常见 Terminal | ✅ 已完成 | `aborted_*` / `max_turns` |
-| **M7** | 工具进阶：流式执行 + 结果预算 | ⬜ | `StreamingToolExecutor` |
+| **M7** | 工具进阶：流式执行 + 结果预算 | ✅ 已完成 | `StreamingToolExecutor` |
 | **M8** | 上下文进阶：memory / attachments / reactive compact 概览 | ⬜ | `attachments` / compact |
 | **M9** | Hooks 护栏：PreToolUse / stop hooks | ⬜ | `hooks.ts` |
 | **M10** | 嵌套 Agent：runAgent 同构 loop | ⬜ | `AgentTool/runAgent` |
@@ -54,9 +54,14 @@
 - `max_turns`：Continue 前检查，超了直接 return，不 `state=next`
 - Terminal.reason 区分 completed / abort / 超限 / 模型错，门面不假报完成
 
+### 已完成 M7
+
+- 流式执行：同一批工具，开工更早；并发规则不变
+- `applyToolResultBudget` 砍信里过大的 tool_result；Read 不落盘以免循环
+
 ### 下一步
 
-- **M7：工具进阶**（流式执行 + 结果预算）——未开始
+- **M8：上下文进阶**（memory / attachments / reactive compact 概览）——未开始
 
 ## 文件约定
 
