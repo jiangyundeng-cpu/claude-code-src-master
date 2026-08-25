@@ -25,7 +25,7 @@
 | **M7** | 工具进阶：流式执行 + 结果预算 | ✅ 已完成 | `StreamingToolExecutor` |
 | **M8** | 上下文进阶：memory / attachments / reactive compact 概览 | ✅ 已完成 | `attachments` / compact |
 | **M9** | Hooks 护栏：PreToolUse / stop hooks | ✅ 已完成 | `hooks.ts` |
-| **M10** | 嵌套 Agent：runAgent 同构 loop | ⬜ | `AgentTool/runAgent` |
+| **M10** | 嵌套 Agent：runAgent 同构 loop | ✅ 已完成 | `AgentTool/runAgent` |
 | **M11** | 综合：端到端口述 + 模拟面试 | ⬜ | notes 汇总 |
 
 > 原 30 天计划中的 D8–D30 内容并入 M6–M11，**不丢知识点，只合并节奏**。
@@ -71,9 +71,15 @@
 - PreToolUse：call 前可拦，仍交 tool_result
 - Stop hook：没工具准备停；失败可 Continue 塞回模型
 
+### 已完成 M10
+
+- 子 Agent 再调同一个 `query()`（同构）
+- messages / agentId / 工具面隔离
+- 停机后以 `tool_result` 交回主 loop
+
 ### 下一步
 
-- **M10：嵌套 Agent**（runAgent 同构 loop）——未开始
+- **M11：综合口述 + 模拟面试**——未开始
 
 ## 文件约定
 
