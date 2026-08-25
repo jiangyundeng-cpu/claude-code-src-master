@@ -23,13 +23,13 @@ npx tsx demos/day01_facade.ts
 
 ## 远程仓库
 
-- URL：https://github.com/jiangyundeng-cpu/claude-code-src-master
-- 本地目录：`notes/`（独立 git，与 CC 源码分离）
+- URL：https://github.com/jiangyundeng-cpu/claude-code-Harness-analysis
+- 本地目录：`claude code Harness analysis/`（独立 git，与 CC 源码分离）
 
 日常更新：
 
 ```bash
-cd notes
+cd "claude code Harness analysis"
 git add .
 git commit -m "D1-2: xxx"
 git push
