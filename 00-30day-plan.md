@@ -24,7 +24,7 @@
 | **M6** | 容错与停机：abort / max_turns / 常见 Terminal | ✅ 已完成 | `aborted_*` / `max_turns` |
 | **M7** | 工具进阶：流式执行 + 结果预算 | ✅ 已完成 | `StreamingToolExecutor` |
 | **M8** | 上下文进阶：memory / attachments / reactive compact 概览 | ✅ 已完成 | `attachments` / compact |
-| **M9** | Hooks 护栏：PreToolUse / stop hooks | ⬜ | `hooks.ts` |
+| **M9** | Hooks 护栏：PreToolUse / stop hooks | ✅ 已完成 | `hooks.ts` |
 | **M10** | 嵌套 Agent：runAgent 同构 loop | ⬜ | `AgentTool/runAgent` |
 | **M11** | 综合：端到端口述 + 模拟面试 | ⬜ | notes 汇总 |
 
@@ -65,9 +65,15 @@
 - attachment 是 Harness 夹的配菜；tool_result 是工具交卷
 - reactive compact：413 后再压并重试；hasAttempted 防死循环
 
+### 已完成 M9
+
+- Hooks 由 Harness 跑脚本，不是模型
+- PreToolUse：call 前可拦，仍交 tool_result
+- Stop hook：没工具准备停；失败可 Continue 塞回模型
+
 ### 下一步
 
-- **M9：Hooks 护栏**（PreToolUse / stop hooks）——未开始
+- **M10：嵌套 Agent**（runAgent 同构 loop）——未开始
 
 ## 文件约定
 
