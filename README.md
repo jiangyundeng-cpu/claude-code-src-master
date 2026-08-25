@@ -1,18 +1,19 @@
 # Claude Code Harness 学习笔记
 
-基于 Claude Code 2.1.88 源码的 **30 天 Harness 架构** 学习笔记，只聚焦 Agent Runtime 核心。
+基于 Claude Code 2.1.88 源码的 **Harness 架构** 学习笔记，只聚焦 Agent Runtime 核心。
 
 ## 目录
 
 | 路径 | 内容 |
 |------|------|
-| `00-30day-plan.md` | 30 天学习计划与进度 |
+| `00-30day-plan.md` | 模块制进度（M1–M10） |
 | `demos/` | 每节极简 TS Demo，复刻核心逻辑 |
 | `interview/` | 面试口述话术 |
 
 ## 当前进度
 
-- **D1 小节 1** — `query` 门面 vs `queryLoop` 内核
+- 骨架课 **M1–M10 结业**；M11 跳过
+- **本课程结课**
 
 ## Demo 运行
 

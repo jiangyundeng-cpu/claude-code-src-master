@@ -26,9 +26,7 @@
 | **M8** | 上下文进阶：memory / attachments / reactive compact 概览 | ✅ 已完成 | `attachments` / compact |
 | **M9** | Hooks 护栏：PreToolUse / stop hooks | ✅ 已完成 | `hooks.ts` |
 | **M10** | 嵌套 Agent：runAgent 同构 loop | ✅ 已完成 | `AgentTool/runAgent` |
-| **M11** | 综合：端到端口述 + 模拟面试 | ⬜ | notes 汇总 |
-
-> 原 30 天计划中的 D8–D30 内容并入 M6–M11，**不丢知识点，只合并节奏**。
+| **M11** | 综合口述 + 模拟面试 | ⏭️ 跳过 | notes 汇总 |
 
 ## 每次学习固定流程（模块级）
 
@@ -77,9 +75,10 @@
 - messages / agentId / 工具面隔离
 - 停机后以 `tool_result` 交回主 loop
 
-### 下一步
+### 结课
 
-- **M11：综合口述 + 模拟面试**——未开始
+- 骨架课 **M1–M10 结业**；M11 跳过
+- 本课程到此结束
 
 ## 文件约定
 
